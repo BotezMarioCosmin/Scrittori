@@ -8,5 +8,34 @@ namespace Scrittori
 {
     internal class Scrittori
     {
+        //mutabili
+        private string _colore;
+        private string _stile;
+
+        public string Colore
+        {
+            set
+            {
+                _colore = value;
+            }
+
+            get
+            {
+                return _colore;
+            }
+        }
+
+        public string Stile
+        {
+            set
+            {
+                _stile = value;
+            }
+
+            get
+            {
+                return _stile;
+            }
+        }
     }
 }
