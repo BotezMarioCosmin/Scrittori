@@ -15,6 +15,12 @@ namespace Scrittori
         public Form1()
         {
             InitializeComponent();
+        }      
+
+        private void scelta_colore_Click(object sender, EventArgs e)
+        {
+            //colorDialog1.ShowDialog();
         }
+
     }
 }
