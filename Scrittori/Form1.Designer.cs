@@ -35,6 +35,7 @@
             this.grassetto = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.scrivi = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -100,6 +101,7 @@
             this.scrivi.TabIndex = 7;
             this.scrivi.Text = "Scrivi";
             this.scrivi.UseVisualStyleBackColor = true;
+            this.scrivi.Click += new System.EventHandler(this.scrivi_Click);
             // 
             // Form1
             // 
@@ -129,6 +131,7 @@
         private System.Windows.Forms.CheckBox grassetto;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button scrivi;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
