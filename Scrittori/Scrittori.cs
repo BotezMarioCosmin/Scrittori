@@ -6,62 +6,91 @@ using System.Threading.Tasks;
 
 namespace Scrittori
 {
-    internal class Scrittori
+    public class Scrittori
     {
         //mutabili
+        private string utente;
         private string _colore;
-        private bool _grassetto;
-        private bool _corsivo;
-        private bool _sottolineato;
+        private int _stile;
+        private Visore vis;
 
+        public Scrittori(Visore v1)
+        {
+            vis = v1;
+        }
+
+        public string Utente
+        { 
+            get 
+            { 
+                return utente; 
+            } 
+            set 
+            { 
+                utente = value; 
+            } 
+        }
         public string Colore
         {
             set
             {
-                _colore = value;
+                vis.Colore = value;
             }
 
             get
             {
-                return _colore;
+                return vis.Colore;
             }
         }
 
-        public bool StileGrassetto
+        public bool Grassetto
         {
             set
             {
-                _grassetto = value;
+                vis.Grassetto = value;
             }
 
             get
             {
-                return _grassetto;
-            }
-        }
-        public bool StileCorsivo
-        {
-            set
-            {
-                _corsivo = value;
-            }
-
-            get
-            {
-                return _corsivo;
+                return vis.Grassetto;
             }
         }
 
-        public bool StileSottolineato
+        public bool Corsivo
         {
             set
             {
-                _sottolineato = value;
+                vis.Corsivo = value;
             }
 
             get
             {
-                return _sottolineato;
+                return vis.Corsivo;
+            }
+        }
+
+        public bool Sottolineato
+        {
+            set
+            {
+                vis.Sottolineato = value;
+            }
+
+            get
+            {
+                return vis.Sottolineato;
+            }
+        }
+
+        public Visore V
+        {
+            get
+            {
+                return vis;
+            }
+            set
+            {
+                vis = value;
             }
         }
     }
