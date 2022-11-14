@@ -31,22 +31,28 @@ namespace Scrittori
 
         private void scrivi_Click(object sender, EventArgs e)
         {
-            FontStyle f;
-            //riferimento al testo selezionato
-            font = richTextBox1.SelectionFont;
-            if (font != null)
+            if (grassetto.Checked == true)
             {
-                f = font.Style;
-                //controllo stili selezionati
-                if (grassetto.Checked)
-                    f ^= FontStyle.Bold;
-                if (corsivo.Checked)
-                    f ^= FontStyle.Italic;
-                if (sottolineato.Checked)
-                    f ^= FontStyle.Underline;
-                //setta lo stile del font
-                richTextBox1.SelectionFont = new Font(font, f);
+                scrittore.Grassetto = true;
             }
+            else
+                scrittore.Grassetto = false;
+
+            if (corsivo.Checked == true)
+            {
+                scrittore.Corsivo = true;
+            }
+            else
+                scrittore.Corsivo = false;
+
+            if (sottolineato.Checked == true)
+            {
+                scrittore.Sottolineato = true;
+            }
+            else
+                scrittore.Sottolineato = false;
+
+            
             //setta il colore
             richTextBox1.SelectionColor = colorDialog1.Color;
             //aggiunge il testo applicando stile e colore
