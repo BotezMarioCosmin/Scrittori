@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,22 @@ namespace Scrittori
         private bool grassetto;
         private bool corsivo;
         private bool sottolineato;
-        private string colore;
+        private Color colore;
 
+        public Visore()
+        {
+            this.grassetto = false;
+            this.colore = Color.Black;
+            this.sottolineato = false;
+            this.corsivo = false;
+        }
+        public Visore(bool ilgrassetto, bool ilcorsivo, bool ilsottolineato, Color ilcolore)
+        { 
+            this.grassetto = ilgrassetto;
+            this.colore = ilcolore;
+            this.sottolineato = ilsottolineato;
+            this.corsivo = ilcorsivo;            
+        }
         public bool Grassetto
         {
             get 
@@ -46,7 +61,7 @@ namespace Scrittori
                 sottolineato = value;
             }
         }
-        public string Colore
+        public Color Colore
         {
             get
             {

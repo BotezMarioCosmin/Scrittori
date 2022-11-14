@@ -40,17 +40,19 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(8, 8);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(754, 428);
+            this.richTextBox1.Size = new System.Drawing.Size(504, 280);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // scelta_colore
             // 
-            this.scelta_colore.Location = new System.Drawing.Point(625, 458);
+            this.scelta_colore.Location = new System.Drawing.Point(417, 298);
+            this.scelta_colore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.scelta_colore.Name = "scelta_colore";
-            this.scelta_colore.Size = new System.Drawing.Size(141, 38);
+            this.scelta_colore.Size = new System.Drawing.Size(94, 25);
             this.scelta_colore.TabIndex = 2;
             this.scelta_colore.Text = "scelta_colore";
             this.scelta_colore.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@
             // corsivo
             // 
             this.corsivo.AutoSize = true;
-            this.corsivo.Location = new System.Drawing.Point(447, 466);
+            this.corsivo.Location = new System.Drawing.Point(298, 303);
+            this.corsivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.corsivo.Name = "corsivo";
-            this.corsivo.Size = new System.Drawing.Size(87, 24);
+            this.corsivo.Size = new System.Drawing.Size(61, 17);
             this.corsivo.TabIndex = 3;
             this.corsivo.Text = "Corsivo";
             this.corsivo.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@
             // sottolineato
             // 
             this.sottolineato.AutoSize = true;
-            this.sottolineato.Location = new System.Drawing.Point(223, 466);
+            this.sottolineato.Location = new System.Drawing.Point(149, 303);
+            this.sottolineato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sottolineato.Name = "sottolineato";
-            this.sottolineato.Size = new System.Drawing.Size(121, 24);
+            this.sottolineato.Size = new System.Drawing.Size(82, 17);
             this.sottolineato.TabIndex = 4;
             this.sottolineato.Text = "Sottolineato";
             this.sottolineato.UseVisualStyleBackColor = true;
@@ -79,25 +83,28 @@
             // grassetto
             // 
             this.grassetto.AutoSize = true;
-            this.grassetto.Location = new System.Drawing.Point(12, 466);
+            this.grassetto.Location = new System.Drawing.Point(8, 303);
+            this.grassetto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grassetto.Name = "grassetto";
-            this.grassetto.Size = new System.Drawing.Size(106, 24);
+            this.grassetto.Size = new System.Drawing.Size(71, 17);
             this.grassetto.TabIndex = 5;
             this.grassetto.Text = "Grassetto";
             this.grassetto.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 515);
+            this.textBox1.Location = new System.Drawing.Point(8, 335);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(754, 26);
+            this.textBox1.Size = new System.Drawing.Size(504, 20);
             this.textBox1.TabIndex = 6;
             // 
             // scrivi
             // 
-            this.scrivi.Location = new System.Drawing.Point(12, 563);
+            this.scrivi.Location = new System.Drawing.Point(8, 366);
+            this.scrivi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.scrivi.Name = "scrivi";
-            this.scrivi.Size = new System.Drawing.Size(754, 38);
+            this.scrivi.Size = new System.Drawing.Size(503, 25);
             this.scrivi.TabIndex = 7;
             this.scrivi.Text = "Scrivi";
             this.scrivi.UseVisualStyleBackColor = true;
@@ -105,9 +112,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 614);
+            this.ClientSize = new System.Drawing.Size(519, 399);
             this.Controls.Add(this.scrivi);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.grassetto);
@@ -115,8 +122,10 @@
             this.Controls.Add(this.corsivo);
             this.Controls.Add(this.scelta_colore);
             this.Controls.Add(this.richTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

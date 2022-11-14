@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,6 @@ namespace Scrittori
     {
         //mutabili
         private string utente;
-        private string _colore;
-        private int _stile;
         private Visore vis;
 
         public Scrittori(Visore v1)
@@ -30,7 +29,7 @@ namespace Scrittori
                 utente = value; 
             } 
         }
-        public string Colore
+        public Color Colore
         {
             set
             {
