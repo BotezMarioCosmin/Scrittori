@@ -10,7 +10,9 @@ namespace Scrittori
     {
         //mutabili
         private string _colore;
-        private string _stile;
+        private bool _grassetto;
+        private bool _corsivo;
+        private bool _sottolineato;
 
         public string Colore
         {
@@ -25,16 +27,41 @@ namespace Scrittori
             }
         }
 
-        public string Stile
+        public bool StileGrassetto
         {
             set
             {
-                _stile = value;
+                _grassetto = value;
             }
 
             get
             {
-                return _stile;
+                return _grassetto;
+            }
+        }
+        public bool StileCorsivo
+        {
+            set
+            {
+                _corsivo = value;
+            }
+
+            get
+            {
+                return _corsivo;
+            }
+        }
+
+        public bool StileSottolineato
+        {
+            set
+            {
+                _sottolineato = value;
+            }
+
+            get
+            {
+                return _sottolineato;
             }
         }
     }
